@@ -1,0 +1,118 @@
+<!--
+    Student Name: Shannon Brasel
+    File Name: survey.html
+    Date: 11/16/24
+    -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Unit 3:Survey</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/layout.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+          <!--The header will contain the nav and header image-->
+        <header>
+            <div class="tab-desk">
+                <div class="container">
+                    <img src="img/arcade.jfif" alt="arcade">
+                <div class="center"> Psychological Effects of Video Games</div>
+                </div>
+            </div>
+            <div class="mobile">
+                <h1>Psychological Effects of Video Games</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="theeffects.html"> The Effects</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </nav>
+        </header>
+         <!--Main Content goes here-->
+    <main>
+      <div id="form">
+        <h3>For research purposes, please complete this anonymous survey regarding videgame usage.</h3>
+        <form class="form-grid">
+            <fieldset>
+                <legend>Age:</legend>
+                <label for="sixteen"><input type="radio" name="age" id="sixteen" value="sixteen"> 16-25 years</label>
+                <label for="twentysix"><input type="radio" name="age" id="twentysix" value="twentysix"> 26-35 years</label>
+                <label for="thirtysix"><input type="radio" name="age" id="thirtysix" value="thirtysix"> 36-45 years</label>
+                <label for="fortysix"><input type="radio" name="age" id="fortysix" value="fortysix"> 46-55 years</label>
+                <label for="fiftyfive"><input type="radio" name="age" id="fiftyfive" value="fiftyfive"> 55+ years</label>
+            </fieldset>
+            <fieldset>
+                <legend>Gender:</legend>
+                <label for="female"><input type="radio" name="gender" id="female" value="female"> Female</label>
+                <label for="male"><input type="radio" name="gender" id="male" value="male"> Male</label>
+                <label for="non-disclosure"><input type="radio" name="gender" id="non-disclosure" value="non-disclosure"> I do not wish to disclose.</label>
+            </fieldset>
+            <fieldset>
+                <legend>Level of Education </legend>
+                <label for="less-than-highschool"><input type="radio" name="education" id="less-than-highschool" value="less-than-highschool"> Less than High School</label>
+                <label for="ged"><input type="radio" name="education" id="ged" value="ged"> GED</label>
+                <label for="highschool"><input type="radio" name="education" id="highschool" value="highschool"> High School Diploma</label>
+                <label for="somecollege"><input type="radio" name="education" id="somecollege" value="somecollege"> Some College</label>
+                <label for="associate"><input type="radio" name="education" id="associate" value="associate"> Associate Degree</label>
+                <label for="bachelor"><input type="radio" name="education" id="bachelor" value="bachelor"> Bachelor's Degree</label>
+                <label for="master"><input type="radio" name="education" id="master" value="master"> Master's Degree</label>
+                <label for="doctoral"><input type="radio" name="education" id="doctoral" value="doctoral"> Doctoral Degree</label>
+            </fieldset>
+            <fieldset>
+                <legend>Employment Status:</legend>
+                <label for="employed"><input type="radio" name="employment" id="employed" value="employed"> Employed</label>
+                <label for="unemployed"><input type="radio" name="employment" id="unemployed" value="unemployed"> Unemployed</label>
+                <label for="preference"><input type="radio" name="employment" id="preference" value="preference"> Prefer not to say</label>
+            </fieldset>
+            <fieldset>
+                <legend>On average, how many hours a week do you play video games?</legend>
+                <label for="zero"><input type="radio" name="play" id="zero" value="zero"> 0-3 hours</label>
+                <label for="four"><input type="radio" name="play" id="four" value="four"> 4-7 hours</label>
+                <label for="eight"><input type="radio" name="play" id="eight" value="eight"> 8-11 hours</label>
+                <label for="twelve"><input type="radio" name="play" id="twelve" value="twelve"> 12+ hours</label>
+            </fieldset>
+            <fieldset>
+                <legend>On average, how many hours of sleep do you get in a day? </legend>
+                <label for="zero-to-three"><input type="radio" name="sleep" id="zero-to-three" value="zero-to-three"> 0-3 hours</label>
+                <label for="four-to-six"><input type="radio" name="sleep" id="four-to-six" value="four-to-six"> 4-6 hours</label>
+                <label for="seven"><input type="radio" name="sleep" id="seven" value="seven"> 7-8 hours</label>
+                <label for="nine"><input type="radio" name="sleep" id="nine" value="nine"> 9+ hours</label>
+            </fieldset>
+            <fieldset>
+                <legend>What types of video games do you play?</legend>
+                <label for="platform"><input type="checkbox" name="type" id="platform" value="platform"> Platform</label>
+                <label for="shooter"><input type="checkbox" name="type" id="shooter" value="shooter"> Shooter</label>
+                <label for="fighting"><input type="checkbox" name="type" id="fighting" value="fighting"> Fighting</label>
+                <label for="beat"><input type="checkbox" name="type" id="beat" value="beat"> Beat'em up</label>
+                <label for="stealth"><input type="checkbox" name="type" id="stealth" value="stealth"> Stealth</label>
+                <label for="survival"><input type="checkbox" name="type" id="survival" value="survival"> Survival</label>
+                <label for="rhythm"><input type="checkbox" name="type" id="rhythm" value="rhythm"> Rhythm</label>
+                <label for="battle"><input type="checkbox" name="type" id="battle" value="battle"> Battle Royal</label>
+            </fieldset>
+            <fieldset>
+                <legend>Have you missed work or school because of a video games?</legend>
+                <label for="affirmative"><input type="radio" name="missing" id="affirmative" value="affirmative"> Yes</label>
+                <label for="negative"><input type="radio" name="missing" id="negative" value="negative"> No</label>
+            </fieldset>
+            <fieldset>
+                <legend>Do you feel as if you are getting proper food intake?</legend>
+                <label for="yes"><input type="radio" name="food" id="yes" value="yes"> Yes</label>
+                <label for="no"><input type="radio" name="food" id="no" value="no"> No</label>
+            </fieldset>
+            <fieldset>
+                <legend>How often do you exercise?</legend>
+                <label for="often"><input type="radio" name="exercise" id="often" value="often"> Often</label>
+                <label for="occasionally"><input type="radio" name="exercise" id="occasionally" value="occasionally"> Occasionally</label>
+                <label for="never"><input type="radio" name="exercise" id="never" value="never"> Never</label>
+            </fieldset>
+            <input type="submit" id="submit" value="submit" class="btn">
+            <input type="reset" id="reset" value="reset" class="btn">
+        </form>
+      </div>
+    </main> 
+    </body>
+    </html>

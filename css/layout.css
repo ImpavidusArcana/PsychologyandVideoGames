@@ -1,0 +1,342 @@
+/* Student Name: Shannon Brasel
+    File Name: layout.css
+    Date: 11/16/24 */
+/*CSS Reset*/
+body, header, nav, main, img, h1, h3, h2, ul, aside, video  {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    
+}
+/*Wireframe for mobile-tablet */
+header, nav, main, img {
+    outline: 1px solid red;
+}
+/* Style Rules for Body and Images */
+body {
+    background-color:#8d7b9e;
+}
+/* Style rule show mobile class and hide tab-desk class */
+.mobile {
+    display: block;
+    background-color: #a691ba;
+    margin: .3%;
+}
+
+.tab-desk, .desktop, .video-tablet, .video-desktop {
+    display:none;
+}
+
+/*Style Rules for Header */
+.mobile h1 {
+    text-align: center;
+    font-size: 2em;
+    color: White;
+    text-shadow: 2px 2px 2px #2a284d;
+    
+}
+/*Style Rules for Nav area */
+nav {
+    background-color: #726b96;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+nav li {
+    display: block;
+    font-size: 1.25em;
+    font-family: sans-serif, Arial, Helvetica;
+    font-weight:650;
+    border-top: 2px solid  #2a284d;
+}
+nav li a {
+    display: block;
+    color:#FFFFFF;
+    text-shadow: 2px 2px 2px #2a284d;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-decoration: none;
+}
+/*Style Rules for Main area */
+main {
+    margin-left: .5%;
+    margin-right: .5%;
+}
+main h2 {
+    font-size: 1.50em;
+    text-align: center;
+    margin: 1px;
+    color: white;
+    text-shadow: 2px 2px 2px #2a284d;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.index-img {
+  float: left;
+}
+aside {
+    width: 35%;
+    float: left;
+    font-style: italic;
+    display:inline;
+    font-size: 1.25em;
+    background-color:#2a284d;
+    color: white;
+    text-align: center;
+  }
+/*Style Rules for Form */
+#form {
+    margin-top: 1%;
+    padding: 2%;
+    font-size: 1.5em;
+}
+#form p {
+    padding-top: 2%;
+}
+#form h3 {
+    font-size: 1.25em;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #2a284d;
+}
+fieldset legend {
+    font-size:1.25em;
+    color: white;
+    text-shadow: 2px 2px 2px #2a284d;
+}
+fieldset p {
+    font-size: 1.25em;
+    color: white;
+    text-shadow: 2px 2px 2px #2a284d;
+}
+fieldset {
+    margin: 2%;
+}
+label {
+    display: block;
+    padding-top: 2%;
+    font-size: 1.1em;
+}
+input {
+    width: 50px;
+}
+.btn {
+    display: inline-block;
+    height: 30px;
+    width: 50px;
+    background-color: #2a284d;
+    color: white;
+    margin-top: 2%;
+}
+/*Style rules for video */
+.video-mobile {
+   text-align: center;
+}
+/*Style Rules for Table*/
+.mobile-tablet {
+    color: white;
+    text-shadow: 2px 2px 2px #2a284d;
+    display: block;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.mobile-tablet li {
+    list-style-type: none;
+    border-top: 1px solid #2a284d;
+}
+.mobile-tablet table, .mobile-tablet tr, .mobile-tablet td {
+    border: .2em solid #2a284d;
+}
+.mobile-tablet table {
+    border-collapse: collapse;
+    font-size: 1.50em;
+}
+.mobile-tablet li:nth-child(even) {
+    background-color:#726b96;
+}
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 620px) {
+    /*Tablet Viewport: Show tab-desk class, hide mobile class*/
+.tab-desk {
+    display: block;
+    background-color:#2a284d;
+}
+.mobile, .desktop, .video-mobile, .video-desktop {
+    display: none;
+}
+/*Tablet Viewport: Wireframe: */
+.center, nav ul, nav li, nav {
+    border: 1px solid red;
+}
+/*Tablet Viewport: Style rules for nav area*/
+.container {
+    position: relative;
+    
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    Color: white;
+    font-family: 'Lucida Sans';
+    text-align: center;
+    text-shadow: 2px 2px 2px #17162c;
+  
+}  
+nav li {
+    border-top: none;
+    display: inline-block;
+    font-size: 1.75em;
+    padding: 1%;
+}
+nav li a {
+    padding: 0.5em;
+}
+  /*Tablet Viewport: Style rules for Main Area*/
+main h2 {
+    font-size: 2em;
+}
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 35%;
+    font-style: italic;
+    font-size: 2em;
+}
+.index-img {
+    float: right;
+    margin-right: 35%;
+    margin-left:35%;
+    width: 30%;
+}
+main h3 {
+    font-size: 2em;
+}
+/*Tablet Viewport: Style rules for video */
+.video-tablet {
+    display: block;
+    text-align: center;
+}
+/* Tablet Viewport: Style rules for Table */
+.mobile-tablet {
+    margin-right: 20%;
+    margin-left: 20%;
+    width: 60%;
+}
+/*Tablet Viewport: Style Rules for Form */
+form {
+    color:#17162c;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+#form h3 {
+    font-size: 1.5em;
+}
+.btn {
+    width: 90px;
+}
+}
+/*Media Query for Desktop Viewport*/
+@media screen and (min-width: 1000px) {
+/*Wireframe for Desktop Viewport:*/
+header, nav,nav ul,nav li, main, img, .center {
+    outline: 1.1px solid blue;
+}
+/*Desktop Viewport Nav*/
+nav li a:hover{
+    background-color:#2a284d;
+}
+/*Desktop Viewport show/hide table*/
+.desktop{
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+.mobile-tablet {
+    display: none;
+}
+/*Desktop Viewport: Style rules for main content*/
+main h2 {
+    font-size: 3em;
+}
+.index-img {
+    width: 30%;
+}
+aside{
+    font-size: 2em;
+}
+/*Desktop Viewport: Style Rules for Table: */
+caption {
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 2px #2a284d;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 1.75em;
+}
+th {
+    background-color:#2a284d;
+    color: white;
+    font-size:1.75em;
+}
+td {
+    height: 2em;
+    width: 25em;
+    font-size: 1.5em;
+}
+table, th, td {
+    border: .1em solid #2a284d;
+}
+tr:nth-child(even){
+    background-color:#726b96;
+}
+/* Desktop Viewport: Style Rules for Video */
+.video-tablet {
+    display: none;
+
+}
+.video-desktop {
+    text-align: center;
+    display: block;
+}
+/*Desktop Viewport: Style Rules for Form */
+form {
+    width: auto;
+    font-size: 1em;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1px;
+}
+#form h3 {
+    font-size: 2em;
+}
+.btn {
+    width: 150px;
+}
+}
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px){
+.desktop{
+    width:45%;
+}
+fieldset {
+    font-size:1.50em;
+}
+}
